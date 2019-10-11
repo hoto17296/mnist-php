@@ -1,17 +1,19 @@
 # MNIST-PHP
+PHP-ML の SVM で MNIST を解くやつ
 
-## Setup
-Start jupyter-php on Docker container.
+## Usage
+Jupyter-PHP に PHP-ML をインストールした Docker コンテナを起動する。
 
 ``` console
 $ docker-compose up -d
 ```
 
-Try to access http://localhost:7777/
+Web ブラウザから http://localhost:7777/ にアクセスすると見れる。
 
-Then, download MNIST dataset.  
-You need execute the following just once.
+次に、MNIST データセットをダウンロードする。
 
 ``` console
 $ docker-compose run jupyter sh download-datasets.sh
 ```
+
+あとは [mnist-svm.ipynb](mnist-svm.ipynb) に従って進める。
